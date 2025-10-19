@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - IT Student</title>
+    <link rel="stylesheet" href="../CSS/button-for-P_R.css">
+    <script src="../JS/button-for-P_R.js"></script>
+    <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #222;
+        --header-bg: #005f73;
+        --nav-bg: #0a9396;
+        --nav-hover: #94d2bd;
+        --hero-bg: #e9d8a6;
+        --card-bg: #fdfcdc;
+        --card-border: #ee9b00;
+        --footer-bg: #005f73;
+      }
+
+      .dark-mode {
+        --bg-color: #1a1a1a;
+        --text-color: #f5f5f5;
+        --header-bg: #0a0a0a;
+        --nav-bg: #333;
+        --nav-hover: #555;
+        --hero-bg: #222;
+        --card-bg: #2c2c2c;
+        --card-border: #444;
+        --footer-bg: #0a0a0a;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      header {
+        background-color: var(--header-bg);
+        color: var(--card-bg);
+        padding: 30px 10%;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.5em;
+        letter-spacing: 1px;
+      }
+
+      .toggle-btn {
+        margin-top: 10px;
+        background-color: var(--nav-hover);
+        color: var(--text-color);
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      nav {
+        background-color: var(--nav-bg);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        padding: 15px 25px;
+        color: var(--card-bg);
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s ease-in-out;
+      }
+
+      nav a:hover {
+        background-color: var(--nav-hover);
+        color: var(--header-bg);
+      }
+
+      .hero {
+        background-color: var(--hero-bg);
+        padding: 70px 10%;
+        text-align: center;
+        animation: fadeIn 1s ease-out;
+      }
+
+      .hero h2 {
+        font-size: 2.5em;
+        margin-bottom: 15px;
+        color: var(--header-bg);
+      }
+
+      .hero p {
+        font-size: 1.2em;
+        color: var(--text-color);
+      }
+
+      .photo {
+        margin: 30px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        animation: bounceIn 1s ease;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .section {
+        padding: 50px 10%;
+      }
+
+      .section h3 {
+        margin-bottom: 25px;
+        color: var(--nav-bg);
+        font-size: 1.8em;
+      }
+
+      .card {
+        background: var(--card-bg);
+        padding: 25px;
+        margin-bottom: 25px;
+        border-left: 6px solid var(--card-border);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        transition: background 0.3s ease;
+      }
+
+      footer {
+        background-color: var(--footer-bg);
+        color: var(--card-bg);
+        text-align: center;
+        padding: 20px 10%;
+        font-size: 0.95em;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes bounceIn {
+        0% {
+          transform: scale(0.8);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @media (max-width: 768px) {
+        header h1,
+        .hero h2 {
+          font-size: 1.8em;
+        }
+
+        nav a {
+          padding: 10px 15px;
+          font-size: 1em;
+        }
+
+        .section {
+          padding: 35px 5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="home-button" id="floatingBtn"></a>
+    <header>
+      <h1>Andrea SR. Talampas</h1>
+      <p>BSIT-1J</p>
+      <button class="toggle-btn" onclick="toggleDarkMode()">Dark Mode</button>
+    </header>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+      <div class="photo">
+        <img src="../OTHERS/andie.png" />
+      </div>
+      <h2>Hi, I'm an Aspiring Developer</h2>
+      <p>
+        I want to create websites that are clean, simple, and efficient. Let's
+        build something great together.
+      </p>
+    </div>
+
+    <section class="section" id="about">
+      <h3>About Me</h3>
+      <div class="card">
+        <p>
+          Driven by a passion for solving puzzles, I’m on a journey to become a
+          developer, constantly learning and growing along the way. When I'm not
+          coding, you can find me lost in a good book, playing volleyball under
+          the sun, or letting the strings of my guitar tell a story of their
+          own.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h3>Skills</h3>
+      <div class="card">
+        <ul>
+          <li>
+            HTML (Basic): I understand the fundamentals of HTML and can create
+            simple, well-structured web pages.
+          </li>
+          <li>
+            Responsive Web Design (Basic): I know how to make websites look good
+            on different screen sizes using basic responsive design techniques.
+          </li>
+          <li>
+            React & Tailwind CSS (Introductory Knowledge): I'm just starting to
+            learn React and Tailwind CSS and enjoy experimenting with their
+            features to improve my front-end development skills.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h3>Contact Me</h3>
+      <div class="card">
+        <p>Email: andreatalampas2001@gmail.com</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Andrea Talampas. Designed with care.</p>
+    </footer>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>

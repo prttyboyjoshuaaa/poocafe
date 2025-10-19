@@ -1,0 +1,90 @@
+/*for resposive design*/
+@media (max-width: 600px) {
+  .about-us {
+    padding: 3em 1.5em;
+  }
+  .about-content {
+    margin-top: 0;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .about-block h2 {
+    font-size: 1.75rem;
+  }
+  .about-block p,
+  .about-block li {
+    font-size: 0.95rem;
+  }
+  .about-image img {
+    border-radius: 1.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .about-content {
+    margin-top: 0;
+    text-align: center;
+    gap: 2rem;
+  }
+  .nav-menu,
+  .auth-buttons {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 10px;
+  }
+  .nav-menu.active,
+  .auth-buttons.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header {
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  .social-icons {
+    position: fixed;
+    bottom: 1.8rem;
+    top: auto;
+    right: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+  }
+  .social-icons.hide {
+    display: none !important;
+  }
+  .logo-wrapper:hover .logo-tooltip {
+    opacity: 1;
+    transform: translateX(-20%) translateY(2px);
+  }
+}
+@media (max-width: 1024px) {
+  .about-us {
+    flex-direction: column;
+    padding: 4em 2em;
+  }
+  .about-image,
+  .about-content {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+  .about-image img {
+    width: 100%;
+    min-height: auto;
+    border-radius: 2rem;
+  }
+  .about-content {
+    margin-top: 0;
+    gap: 2rem;
+  }
+  .about-block h2 {
+    font-size: 2.25rem;
+  }
+}

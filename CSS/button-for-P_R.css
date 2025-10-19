@@ -1,0 +1,19 @@
+.home-button {
+  position: fixed;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, top 1s ease, left 1s ease;
+  z-index: 1000;
+}
+.home-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #6366f1, #60a5fa);
+}

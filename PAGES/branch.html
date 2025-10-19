@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poocafe</title>
+    <link rel="icon" type="image/png" href="IMG/logo.png" />
+    <link rel="stylesheet" href="../CSS/header.css"/>
+    <link rel="stylesheet" href="../CSS/branch.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/modal.css">
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+    <link rel="stylesheet" href="../CSS/dark-mode.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo-wrapper">
+          <img src="../IMG/logo.png" alt="Logo" id="darkModeToggle" />
+          <span class="logo-tooltip">Wanna find out something cool?</span>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger"></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about-us">About Us</a>
+        <a href="../index.html#menu">Menu</a>
+        <a href="#" id="openReferences">References</a>
+        <div class="nav-dropdown" id="devDropdown">
+          <a href="#devList" class="dropdown-toggle" id="devToggle">Developers</a>
+          <ul class="dropdown-list hidden" id="devList">
+            <li><a href="../PERSONAL/personal_deguzman.html">Joshua</a></li>
+            <li><a href="../PERSONAL/personal_constantino.html">Janna</a></li>
+            <li><a href="../PERSONAL/personal_villasan.html">Richard</a></li>
+            <li><a href="../PERSONAL/personal_eugenio.html">Nicole</a></li>
+            <li><a href="../PERSONAL/personal_daoa.html">Adonis</a></li>
+            <li><a href="../PERSONAL/personal_talampas.html">Andie</a></li>
+            <li><a href="../PERSONAL/personal_cuevas.html">Wayne</a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown" id="refDropdown">
+          <a href="#refList" class="dropdown-toggle" id="refToggle">Reflection</a>
+          <ul class="dropdown-list hidden" id="refList">
+            <li><a href="../REFLECTIONS/reflection_deguzman.html">Joshua</a></li>
+            <li><a href="../REFLECTIONS/reflection_constantino.html">Janna</a></li>
+            <li><a href="../REFLECTIONS/reflection_villasan.html">Richard</a></li>
+            <li><a href="../REFLECTIONS/reflection_eugenio.html">Nicole</a></li>
+            <li><a href="../REFLECTIONS/reflection_daoa.html">Adonis</a></li>
+            <li><a href="../REFLECTIONS/reflection_talampas.html">Andie</a></li>
+            <li><a href="../REFLECTIONS/reflection_cuevas.html">Wayne</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="auth-buttons">
+        <button id="nav-login" class="login-button">Log In</button>
+        <button id="nav-signup" class="signup-button">Sign Up</button>
+      </div>
+    </header>
+
+    <main class="branch-section">
+      <h1>Visit Us</h1>
+
+      <div class="branch">
+        <h3>Cabanatuan City Branch</h3>
+        <button onclick="toggleMap(this)">View on Map</button>
+        <div class="branch-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d246079.38520035008!2d120.78746522401619!3d15.48494888954728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339729005110a5fb%3A0xfd86a7382a4055ec!2sStarbucks%20Maharlika%20Highway%20Cabanatuan%20Drive-Thru!5e0!3m2!1sen!2sph!4v1746494037177!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="branch">
+        <h3>San Jose Branch</h3>
+        <button onclick="toggleMap(this)">View on Map</button>
+        <div class="branch-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12913.952333836947!2d120.9880209592508!3d15.785963558554167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3390da23dafbf1c1%3A0x75d5c286f967888d!2sWalterMart%20San%20Jose%2C%20Nueva%20Ecija!5e0!3m2!1sen!2sph!4v1746494878629!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="branch">
+        <h3>Talavera Branch</h3>
+        <button onclick="toggleMap(this)">View on Map</button>
+        <div class="branch-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2220.0845396983527!2d120.91758963825546!3d15.584773866025083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33972a8d0afd81ed%3A0xe07498e1a11ceee8!2sNueva%20Ecija%20University%20of%20Science%20and%20Technology%2CTalavera%20Academic%20Extension%20Campus!5e0!3m2!1sen!2sph!4v1746493960848!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="branch">
+        <h3>Gapan Branch</h3>
+        <button onclick="toggleMap(this)">View on Map</button>
+        <div class="branch-content">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7696.46091229671!2d120.94762149811015!3d15.309706044503285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339721ae321900df%3A0xa82c14021d5a9c39!2sGapan%20Night%20Market!5e0!3m2!1sen!2sph!4v1746495303326!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>Poocafe</h2>
+          <p>Brewing comfort, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#menu">Menu</a></li>
+            <li><a href="../index.html#about-us">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Email: poocafe@gmail.com</p>
+          <p>Phone: +63 991 462 5572</p>
+          <p>Open Daily: 8am - 10pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Poocafe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay hidden"></div>
+    <div id="auth-modal" class="auth-modal hidden">
+      <div class="auth-modal-box">
+        <button id="close-modal" class="close-btn">&times;</button>
+        <div class="auth-toggle">
+          <button id="show-login" class="active">Log In</button>
+          <button id="show-signup">Sign Up</button>
+        </div>
+        <form id="login-form" class="auth-form visible">
+          <h2>Log In</h2>
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+          <button type="submit" class="auth-button">Log In</button>
+        </form>
+        <form id="signup-form" class="auth-form hidden">
+          <h2>Sign Up</h2>
+          <label>Name</label>
+          <input type="text" placeholder="Ex. Joshua" required />
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required />
+          <button type="submit" class="auth-button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="referenceModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>References</h2>
+        <div class="reference-cards">
+          <div class="reference-card">
+            <img src="../IMG/gfonts.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>Google Fonts</h3>
+              <a href="https://fonts.google.com/" target="_blank"
+                >Visit Google Fonts</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="../IMG/html.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>HTML</h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                >Visit MDN HTML</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="../IMG/css.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>CSS</h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                >Visit MDN CSS</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="../IMG/js.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>JavaScript</h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                >Visit MDN JS</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="../IMG/pinterest.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>Design Inspiration</h3>
+              <a
+                href="https://www.pinterest.com/pin/coffee-website-ui-in-2025--703756187988863/"
+                target="_blank"
+                >Visit Pinterest</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/modal.js"></script>
+    <script src="../JS/hamburger.js"></script>
+    <script src="../JS/devs_refs.js"></script>
+    <script src="../JS/social-icons.js"></script>
+    <script src="../JS/lightmode.js"></script>
+    <script src="../JS/seeMap.js"></script>
+  </body>
+</html>

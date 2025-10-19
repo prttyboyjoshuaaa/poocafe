@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - IT Student</title>
+  <link rel="stylesheet" href="../CSS/button-for-P_R.css">
+  <script src="../JS/button-for-P_R.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: Border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #000000 50%, #000000 10%);
+      color: #FFF380;
+      overflow-x: hidden;
+    }
+
+    .nav-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #FFD858;
+      color: #000000;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+      border-radius: 100px;
+    }
+
+    nav {
+      display: none;
+      position: fixed;
+      top: 60px;
+      right: 20px;
+      background: #FFD858;
+      border: 2px solid #000000;
+      box-shadow: 0 0 10px #FFD858;
+      padding: 15px;
+      border-radius: 10px;
+      z-index: 999;
+    }
+
+    nav.show {
+      display: block;
+    }
+
+    nav a {
+      display: BLOCK;
+      color: #000000;
+      text-decoration: none;
+      margin: 10px 0;
+    }
+
+    .layout {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background: #FFFF00;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .profile-info img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #FFFF00;
+      box-shadow: 0 0 20px #FFF380;
+    }
+
+    .name-texts h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.2em;
+      color: #000000;
+    }
+
+    .center-name {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .main-name {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3em;
+      color: #FFFF00;
+    }
+
+    .right {
+      flex: 2;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .hero {
+      background: rgba(0, 0, 0, 0.0);
+      padding: 30px;
+      border-left: 5px solid #FFFF00;
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.1);
+    }
+
+    .section {
+      background: rgba(255, 255, 0, 0.0);
+      border: 1px solid rgba(255, 255, 0, 0.50);
+      padding: 25px;
+      border-radius: 12px;
+    }
+
+    .section h3 {
+      color: #FFFF00;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: 0.85em;
+      color: #FFFF00;
+      padding: 30px 0;
+    }
+
+    @media (max-width: 768px) {
+      .layout {
+        flex-direction: column;
+      }
+
+      .left {
+        padding: 60px 20px 40px;
+      }
+
+      .profile-info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .center-name {
+        margin-top: 20px;
+      }
+
+      .main-name {
+        font-size: 2em;
+      }
+
+      .right {
+        padding: 20px;
+      }
+
+      .name-texts h1 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="../index.html" class="home-button" id="floatingBtn"></a>
+  <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('show')">Menu</button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Welcome Everyone </h2>
+    <p>IM JOHN WAYNE CUEVAS </p>
+  </div>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <div class="card">
+      <p>Im It Student of NEUST</p>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h3>Projects</h3>
+    <div class="card">
+      <h4>E-commerce Website:</h4>
+      <p>A simple HTML/CSS site for ordering coffee, sweets, and snacks.</p>
+    </div>
+    <div class="card">
+      <h4>Personal Portfolio</h4>
+      <p>A responsive personal website to showcase my skills and achievements.</p>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h3>Skills</h3>
+    <div class="card">
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Basic HTML</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Me</h3>
+    <div class="card">
+      <p>Email: Johnwaynecuevas16@gmail.com </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Chan Sean Nguyen. All rights reserved.</p>
+  </footer>
+</body>
+</html>

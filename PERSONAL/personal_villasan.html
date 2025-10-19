@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard</title>
+    <link rel="stylesheet" href="../CSS/button-for-P_R.css">
+    <script src="../JS/button-for-P_R.js"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #222;
+        color: white;
+      }
+
+      header {
+        background-color: #222;
+        padding: 15px 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .h-name h4 {
+        margin: 0;
+        font-size: 22px;
+        color: rgb(162, 162, 218);
+      }
+
+      .nav {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.2s ease;
+      }
+
+      .nav a:hover {
+        color: rgb(162, 162, 218);
+      }
+
+      .container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+      }
+
+      section {
+        scroll-snap-align: start;
+        padding: 40px 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      #page-1 {
+        background-color: #222;
+      }
+
+      .container-1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .my-image img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 8px solid rgb(162, 162, 218);
+      }
+
+      .descriptions {
+        max-width: 600px;
+      }
+
+      .text-1 {
+        line-height: 2;
+      }
+
+      #text-1 {
+        color: rgb(162, 162, 218);
+        font-weight: bold;
+      }
+
+      .text-2 {
+        font-size: 36px;
+        color: rgb(162, 162, 218);
+        font-weight: bold;
+      }
+
+      .text-3 {
+        margin-top: 10px;
+        line-height: 1.6;
+      }
+
+      .icons {
+        margin-top: 20px;
+        display: flex;
+        gap: 15px;
+        font-size: 24px;
+      }
+
+      .social-icons {
+        color: white;
+        transition: 0.2s ease;
+      }
+
+      .social-icons:hover {
+        color: rgb(162, 162, 218);
+      }
+
+      #page-2 {
+        background-color: rgb(162, 162, 218);
+        color: black;
+        padding-top: 60px;
+      }
+
+      #page-2 h1 {
+        color: rgb(10, 10, 63);
+        text-align: center;
+      }
+
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .profile,
+      .skills,
+      .hobbies,
+      .achievements {
+        background-color: white;
+        color: black;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 300px;
+        flex: 1 1 250px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        border: 2px solid rgba(73, 21, 163, 0.6);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .profile:hover,
+      .skills:hover,
+      .hobbies:hover,
+      .achievements:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+      }
+
+      .about ul {
+        padding-left: 20px;
+        list-style-type: disc;
+      }
+
+      footer {
+        background-color: #222;
+        color: white;
+        text-align: center;
+        padding: 15px;
+      }
+
+      @media (max-width: 768px) {
+        .text-2 {
+          font-size: 28px;
+        }
+
+        .nav {
+          justify-content: center;
+          margin-top: 10px;
+        }
+
+        .container-1 {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .descriptions {
+          transform: none;
+        }
+
+        .icons {
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="home-button" id="floatingBtn"></a>
+    <header>
+      <div class="h-name">
+        <h4>Richard Villasan</h4>
+      </div>
+      <nav class="nav">
+        <a href="#profile">Profile</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#achievements">Achievements</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <section id="page-1">
+        <div class="container-1">
+          <div class="my-image">
+            <img src="../OTHERS/richard.jpg" alt="Richard Villasan" />
+          </div>
+          <div class="descriptions">
+            <div class="text-1">
+              Hi, I'm an <span id="text-1">IT Student |</span>
+            </div>
+            <div class="text-2">Richard Villasan</div>
+            <div class="text-3">
+              Welcome! I'm thrilled you're here. As an aspiring web developer, I
+              share my thoughts,<br />
+              experiences, and passions—from coding adventures to my aspirations
+              in the tech world.<br />
+              Explore and let's connect!
+            </div>
+            <div class="icons">
+              <a
+                class="social-icons"
+                href="https://www.facebook.com/share/1Xz4J4Z1LX/"
+                target="_blank"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a
+                class="social-icons"
+                href="https://www.instagram.com/_drach1?igsh=MWUxNncwNHRzcGdhcg=="
+                target="_blank"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a class="social-icons" href="tel:+639753377561"
+                ><ion-icon name="call-outline"></ion-icon
+              ></a>
+              <a class="social-icons" href="mailto:villasanrichard692@gmail.com"
+                ><ion-icon name="mail-outline"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="page-2">
+        <h1>About me</h1>
+        <div class="about">
+          <div class="profile" id="profile">
+            <h3>Profile</h3>
+            <p>
+              Hi, I'm Richard L. Villasan, 18 years old. I was born on August 10, 2006. I lived in La Torre, Talavera, Nueva Ecija. An IT student who studies at Nueva Ecija University of Science and Technology.
+            </p>
+          </div>
+          <div class="skills" id="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>Computer Troubleshooting</li>
+              <li>HTML, CSS, and C++</li>
+              <li>Problem Solving</li>
+            </ul>
+          </div>
+          <div class="hobbies" id="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Watching Volleyball League</li>
+              <li>Watching K-drama</li>
+              <li>Reading Wattpad Stories</li>
+            </ul>
+          </div>
+          <div class="achievements" id="achievements">
+            <h3>Achievements</h3>
+            <ul>
+              <li>Graduated with honors, grades 9-12</li>
+              <li>Computer System Servicing NCII-TESDA Passer</li>
+              <li>I will acknowledge my projects, this responsive personal portfolio and our ordering system in C++, as my achievements throughout my first year in college.</li>
+            </ul>
+          </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Richard Villasan. Designed with care.</p>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

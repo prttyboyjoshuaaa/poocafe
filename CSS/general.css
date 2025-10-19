@@ -1,0 +1,58 @@
+/*font import*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&family=Yanone+Kaffeesatz:wght@200..700&display=swap");
+
+/*color palette*/
+:root {
+  --dark: #25180e;
+  --light: #fbdeca;
+  --dark-brown: #542c24;
+  --light-brown: #c38e6a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.hidden {
+  display: none;
+}
+
+/*animations*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+:root {
+  /*dark mode colors*/
+  --bg-dark: #25180e;
+  --text-light: #fbdeca;
+  --accent-dark: #542c24;
+}

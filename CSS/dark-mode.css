@@ -1,0 +1,147 @@
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+body.dark-mode .header,
+body.dark-mode .menu-section,
+body.dark-mode .about-us,
+body.dark-mode .footer {
+  background-color: var(--accent-dark);
+  color: var(--text-light);
+}
+body.dark-mode .menu-section {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+body.dark-mode .menu-card {
+  color: var(--text-light);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.01);
+}
+body.dark-mode .menu-info h3,
+body.dark-mode .menu-info p,
+body.dark-mode .price {
+  color: var(--text-light);
+}
+body.dark-mode .badge {
+  background-color: var(--light-brown);
+  color: var(--bg-dark);
+}
+body.dark-mode nav a,
+body.dark-mode .nav-dropdown .dropdown-toggle,
+body.dark-mode .hamburger {
+  color: var(--text-light);
+}
+body.dark-mode nav a:hover,
+body.dark-mode .nav-dropdown .dropdown-toggle:hover {
+  color: var(--light-brown);
+}
+body.dark-mode .signup-button,
+body.dark-mode .login-button {
+  background-color: var(--light);
+  color: var(--dark-brown);
+}
+body.dark-mode .signup-button:hover,
+body.dark-mode .login-button:hover {
+  background-color: var(--light-brown);
+  color: var(--light);
+}
+body.dark-mode .hamburger::before {
+  color: var(--text-light);
+}
+body.dark-mode .dropdown-list {
+  background-color: var(--accent-dark);
+  color: var(--text-light);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .dropdown-list li a:hover {
+  color: var(--light-brown);
+}
+body.dark-mode .menu-card {
+  background-color: var(--accent-dark);
+  color: var(--text-light);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+body.dark-mode .about-block h2,
+body.dark-mode .about-us h1 {
+  color: var(--text-light);
+}
+body.dark-mode .footer {
+  background-color: #121212;
+  color: var(--text-light);
+}
+body.dark-mode .footer-links ul li a:hover {
+  color: var(--light-brown);
+}
+body.dark-mode .auth-modal,
+body.dark-mode .auth-modal-box {
+  background-color: var(--accent-dark);
+  color: var(--text-light);
+}
+body.dark-mode .close-btn {
+  color: var(--text-light);
+}
+body.dark-mode .close-btn:hover {
+  color: var(--light-brown);
+}
+body.dark-mode .auth-toggle button {
+  color: var(--text-light);
+  border-color: transparent;
+}
+body.dark-mode .auth-toggle button.active {
+  border-bottom: 2px solid var(--light-brown);
+}
+body.dark-mode .auth-toggle button:hover {
+  color: var(--light-brown);
+}
+body.dark-mode .auth-form {
+  color: var(--text-light);
+}
+body.dark-mode .auth-form input {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  border: 1px solid #444;
+}
+body.dark-mode .auth-button {
+  background-color: var(--light-brown);
+  color: var(--bg-dark);
+}
+body.dark-mode .auth-button:hover {
+  background-color: var(--dark-brown);
+  color: var(--text-light);
+}
+body.dark-mode .social-icons img {
+  background-color: var(--dark-brown);
+}
+body.dark-mode .social-icons img:hover {
+  background-color: var(--light-brown);
+}
+body.dark-mode .dark-toggle-button {
+  color: var(--text-light);
+}
+body.dark-mode #dev-popup {
+  background-color: var(--accent-dark);
+  color: var(--text-light);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1);
+}
+body.dark-mode #dev-popup-close:hover,
+body.dark-mode #dev-popup a:hover {
+  color: var(--light-brown);
+}
+body.dark-mode .branch-section h1 {
+  color: var(--text-light);
+}
+body.dark-mode .branch {
+  background-color: var(--accent-dark);
+  color: var(--text-light);
+}
+@media (max-width: 768px) {
+  body.dark-mode .nav-menu,
+  body.dark-mode .auth-buttons {
+    background-color: var(--accent-dark);
+    color: var(--text-light);
+  }
+
+  body.dark-mode .social-icons {
+    background: none;
+  }
+}

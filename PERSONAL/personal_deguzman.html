@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;900&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="https://static.displate.com/270x380/displate/2023-11-29/290040c0b433b7ed773e02cafc62fcd4_c1fb06f580e9b690656e858f7d90e4f1.jpg"
+      type="image/jpeg"
+    />
+    <title>Joshua</title>
+    <link rel="stylesheet" href="../CSS/button-for-P_R.css">
+    <script src="../JS/button-for-P_R.js"></script>
+    <style>
+      :root {
+        --text-color: #181818;
+        --bar-bg: #3f3f3f;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: linear-gradient(
+          135deg,
+          #cfcfcf 0%,
+          #cccccc 50%,
+          #686868 100%
+        );
+        color: var(--text-color);
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 2rem;
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      body.dark-mode {
+        --text-color: #dddddd;
+        --bar-bg: #b1b1b1;
+        background: linear-gradient(
+          135deg,
+          #080c1b 0%,
+          #3b270c 50%,
+          #080c1b 100%
+        );
+        color: var(--text-color);
+      }
+
+      .fade-in {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      header p {
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+      }
+
+      section {
+        width: 100%;
+        max-width: 640px;
+        margin-bottom: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+
+      .hero-section,
+      .personal-details {
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+      }
+
+      body.dark-mode .hero-section,
+      body.dark-mode .personal-details {
+        background-color: rgba(30, 41, 59, 0.1);
+      }
+
+      .hero-section h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .hero-section p {
+        font-size: 1.125rem;
+      }
+
+      ul {
+        padding-left: 1.25rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+
+      .skill {
+        margin-bottom: 1.5rem;
+      }
+
+      .skill-label {
+        margin-bottom: 0.25rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+      }
+
+      .skill-label img {
+        width: 24px;
+        height: 24px;
+        margin-right: 0.5rem;
+      }
+
+      .bar-bg {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 9999px;
+        height: 12px;
+      }
+
+      .bar-fill {
+        height: 12px;
+        border-radius: 9999px;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+      .footer {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 0.875rem;
+      }
+
+      .footer p {
+        opacity: 0.6;
+      }
+
+      .contact-btn {
+        display: inline-block;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1.5rem;
+        background-color: #000000;
+        color: #ffffff;
+        border-radius: 9999px;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      body.dark-mode .contact-btn {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .contact-btn:hover {
+        transform: scale(1.05);
+      }
+
+      .toggle-wrapper {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 50;
+      }
+
+      .switch {
+        width: 48px;
+        height: 24px;
+        background-color: #000;
+        border-radius: 9999px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .switch::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+
+      body.dark-mode .switch {
+        background-color: #fff;
+      }
+
+      body.dark-mode .switch::before {
+        transform: translateX(24px);
+        background-color: #000;
+      }
+
+      @media (max-width: 768px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        header p {
+          font-size: 1rem;
+        }
+
+        h2 {
+          font-size: 1.25rem;
+        }
+
+        .skill-label {
+          font-size: 1rem;
+        }
+
+        .skill-label img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .container {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="../index.html" class="home-button" id="floatingBtn"></a>
+    <div class="toggle-wrapper">
+      <div id="toggleDark" class="switch"></div>
+    </div>
+
+    <div class="container fade-in">
+      <header>
+        <h1>Joshua De Guzman</h1>
+        <p>BSIT Student | FrontEnd Wannabe</p>
+      </header>
+
+      <section class="hero-section">
+        <h1>Where imagination meets logic.</h1>
+        <p>
+          Passionate about building sleek, functional web apps. Currently
+          mastering HTML, CSS, JS, and beyond.
+        </p>
+      </section>
+
+      <section class="personal-details fade-in">
+        <h2>Personal Details</h2>
+        <ul>
+          <li><strong>Full Name:</strong> Joshua De Guzman</li>
+          <li><strong>Age:</strong> 21</li>
+          <li><strong>Birthdate:</strong> May 18, 2003</li>
+          <li><strong>Location:</strong> Nueva Ecija, Philippines</li>
+          <li>
+            <strong>School:</strong> Nueva Ecija University of Science and
+            Technology
+          </li>
+          <li>
+            <strong>Course:</strong> BS Information Technology - 2nd Year
+            (Irregular)
+          </li>
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:deguzmanjoshuax18@gmail.com"
+              >deguzmanjoshuax18@gmail.com</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            />
+            HTML
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 95%; background-color: #e34c26"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+            />
+            CSS
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 92%; background-color: #264de4"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            />
+            JavaScript
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 41%; background-color: #f59e0b"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img src="https://www.svgrepo.com/show/374118/tailwind.svg" />
+            Tailwind CSS
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 64%; background-color: #3b82f6"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+            />
+            React
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 35%; background-color: #61dafb"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            />
+            PHP
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 23%; background-color: #8892be"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+            />
+            MySQL
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 28%; background-color: #00758f"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+            />
+            Java
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 44%; background-color: #ef4444"
+            ></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <p class="skill-label">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+            />
+            Python
+          </p>
+          <div class="bar-bg">
+            <div
+              class="bar-fill"
+              style="width: 53%; background-color: #facc15"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer fade-in">
+        <p>&copy; 2025 Joshua De Guzman. All rights reserved.</p>
+        <a href="mailto:deguzmanjoshuax18@gmail.com" class="contact-btn"
+          >Get in Touch</a
+        >
+      </footer>
+    </div>
+
+    <script>
+      const toggle = document.getElementById("toggleDark");
+      const body = document.body;
+      toggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+      });
+    </script>
+  </body>
+</html>

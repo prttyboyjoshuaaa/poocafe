@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poocafe</title>
+    <link rel="icon" type="image/png" href="IMG/logo.png" />
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo-wrapper">
+          <img src="IMG/logo.png" alt="Logo" id="darkModeToggle" />
+          <span class="logo-tooltip">Wanna find out something cool?</span>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger"></button>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="PAGES/branch.html">Branches</a>
+        <a href="#" id="openReferences">References</a>
+        <div class="nav-dropdown" id="devDropdown">
+          <a href="#devList" class="dropdown-toggle" id="devToggle">Developers</a>
+          <ul class="dropdown-list hidden" id="devList">
+            <li><a href="PERSONAL/personal_deguzman.html">Joshua</a></li>
+            <li><a href="PERSONAL/personal_constantino.html">Janna</a></li>
+            <li><a href="PERSONAL/personal_villasan.html">Richard</a></li>
+            <li><a href="PERSONAL/personal_eugenio.html">Nicole</a></li>
+            <li><a href="PERSONAL/personal_daoa.html">Adonis</a></li>
+            <li><a href="PERSONAL/personal_talampas.html">Andie</a></li>
+            <li><a href="PERSONAL/personal_cuevas.html">Wayne</a></li>
+          </ul>
+        </div>
+        <div class="nav-dropdown" id="refDropdown">
+          <a href="#refList" class="dropdown-toggle" id="refToggle">Reflection</a>
+          <ul class="dropdown-list hidden" id="refList">
+            <li><a href="REFLECTIONS/reflection_deguzman.html">Joshua</a></li>
+            <li><a href="REFLECTIONS/reflection_constantino.html">Janna</a></li>
+            <li><a href="REFLECTIONS/reflection_villasan.html">Richard</a></li>
+            <li><a href="REFLECTIONS/reflection_eugenio.html">Nicole</a></li>
+            <li><a href="REFLECTIONS/reflection_daoa.html">Adonis</a></li>
+            <li><a href="REFLECTIONS/reflection_talampas.html">Andie</a></li>
+            <li><a href="REFLECTIONS/reflection_cuevas.html">Wayne</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="auth-buttons">
+        <button id="nav-login" class="login-button">Log In</button>
+        <button id="nav-signup" class="signup-button">Sign Up</button>
+      </div>
+    </header>
+
+    <main id="home">
+      <div class="text-background">WHERE EVERY CUP TELLS A STORY</div>
+      <div class="coffee-img-wrapper">
+        <img src="IMG/main-coffee.png" alt="Coffee Cup" />
+      </div>
+      <button class="order-button">Start Sippin</button>
+    </main>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/prttyboyjoshuaaa"
+        ><img src="ICONS/facebook.svg"
+      /></a>
+      <a href="https://www.instagram.com/prttyboyjoshuaaa/"
+        ><img src="ICONS/instagram.svg"
+      /></a>
+      <a href="tel:+639914625572"><img src="ICONS/phone.svg" /></a>
+    </div>
+
+    <section id="about-us" class="about-us">
+      <div class="about-image">
+        <img src="IMG/coffee-shop.jpg" alt="Cozy Coffee Shop" />
+      </div>
+      <div class="about-content">
+        <div class="about-block">
+          <h2>Welcome</h2>
+          <p>
+            Welcome to <strong>Poocafe</strong> — where coffee isn't just a drink, it's an experience.
+            Whether you're a student cramming, a freelancer grinding, or a friend catching up over a latte,
+            Poocafe has a warm seat just for you.
+          </p>
+        </div>
+        <div class="about-block">
+          <h2>Why Poocafe?</h2>
+          <ul>
+            <li><strong>Authentic Taste:</strong> Crafted drinks made from top-quality beans sourced ethically.</li>
+            <li><strong>Chill Atmosphere:</strong> A cozy, Instagram-worthy spot to work, unwind, or socialize.</li>
+            <li><strong>Community-Focused:</strong> We support local artists, events, and community causes.</li>
+            <li><strong>Innovative Menu:</strong> From seasonal specials to signature brews — always something new to try.</li>
+          </ul>
+        </div>
+        <div class="about-block">
+          <h2>What We Offer</h2>
+          <p>
+            Beyond coffee, we offer a curated selection of pastries, snacks, and alternative drinks. Our baristas are trained not just to serve, but to connect — making every visit feel like home.
+          </p>
+        </div>
+        <div class="about-block">
+          <h2>Our Vision</h2>
+          <p>
+            At Poocafe, we aim to be more than a coffee shop. We envision a space where conversations spark ideas, where comfort meets creativity, and where coffee culture thrives.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="menu" class="menu-section">
+      <h1 class="section-title">Menu</h1>
+      <div class="menu-category">
+        <h2>Coffees</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="IMG/vanilla-latte.png" alt="Best seller latte" />
+            <div class="menu-info">
+              <h3>Vanilla Latte <span class="badge">Best Seller</span></h3>
+              <p>
+                Creamy espresso with hints of vanilla and silky steamed milk.
+              </p>
+              <span class="price">$1.50</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="IMG/espresso.png" alt="Espresso" />
+            <div class="menu-info">
+              <h3>Espresso</h3>
+              <p>Bold and rich shot of pure coffee perfection.</p>
+              <span class="price">$1.00</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="IMG/cappuccino.png" alt="Cappuccino" />
+            <div class="menu-info">
+              <h3>Cappuccino</h3>
+              <p>Espresso topped with steamed milk and foam.</p>
+              <span class="price">$1.25</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="IMG/americano.png" alt="Americano" />
+            <div class="menu-info">
+              <h3>Americano</h3>
+              <p>Espresso diluted with hot water for a smoother taste.</p>
+              <span class="price">$1.10</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="IMG/flat-white.png" alt="Flat White" />
+            <div class="menu-info">
+              <h3>Flat White</h3>
+              <p>Velvety microfoam and rich espresso for a balanced flavor.</p>
+              <span class="price">$1.30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h2>Pies</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="IMG/apple-pie.png" alt="Apple Pie" />
+            <div class="menu-info">
+              <h3>Apple Pie</h3>
+              <p>Warm and spiced, served with a buttery crust.</p>
+              <span class="price">$5.50</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="IMG/pecan-pie.png" alt="Pecan Pie" />
+            <div class="menu-info">
+              <h3>Pecan Pie</h3>
+              <p>Sweet, crunchy and irresistible.</p>
+              <span class="price">$5.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-category">
+        <h2>Others</h2>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="IMG/choco-chip-cookie.png" alt="Chocolate Chip Cookie" />
+            <div class="menu-info">
+              <h3>Choco Chip Cookie</h3>
+              <p>Soft, gooey, fresh out of the oven.</p>
+              <span class="price">$2.00</span>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="IMG/brownie.png" alt="Brownie" />
+            <div class="menu-info">
+              <h3>Brownie</h3>
+              <p>Fudgy chocolate square of joy.</p>
+              <span class="price">$2.50</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>Poocafe</h2>
+          <p>Brewing comfort, one cup at a time.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about-us">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>Email: poocafe@gmail.com</p>
+          <p>Phone: +63 991 462 5572</p>
+          <p>Open Daily: 8am - 10pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Poocafe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay hidden"></div>
+    <div id="auth-modal" class="auth-modal hidden">
+      <div class="auth-modal-box">
+        <button id="close-modal" class="close-btn">&times;</button>
+        <div class="auth-toggle">
+          <button id="show-login" class="active">Log In</button>
+          <button id="show-signup">Sign Up</button>
+        </div>
+        <form id="login-form" class="auth-form visible">
+          <h2>Log In</h2>
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required />
+          <button type="submit" class="auth-button">Log In</button>
+        </form>
+        <form id="signup-form" class="auth-form hidden">
+          <h2>Sign Up</h2>
+          <label>Name</label>
+          <input type="text" placeholder="Ex. Joshua" required />
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required />
+          <label>Password</label>
+          <input type="password" placeholder="Create a password" required />
+          <button type="submit" class="auth-button">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="referenceModal" class="modal">
+      <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>References</h2>
+        <div class="reference-cards">
+          <div class="reference-card">
+            <img src="IMG/gfonts.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>Google Fonts</h3>
+              <a href="https://fonts.google.com/" target="_blank"
+                >Visit Google Fonts</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="IMG/html.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>HTML</h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="_blank"
+                >Visit MDN HTML</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="IMG/css.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>CSS</h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                target="_blank"
+                >Visit MDN CSS</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="IMG/js.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>JavaScript</h3>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                target="_blank"
+                >Visit MDN JS</a
+              >
+            </div>
+          </div>
+          <div class="reference-card">
+            <img src="IMG/pinterest.png" class="ref-img" />
+            <div class="ref-text">
+              <h3>Design Inspiration</h3>
+              <a
+                href="https://www.pinterest.com/pin/coffee-website-ui-in-2025--703756187988863/"
+                target="_blank"
+                >Visit Pinterest</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="JS/modal.js"></script>
+    <script src="JS/hamburger.js"></script>
+    <script src="JS/devs_refs.js"></script>
+    <script src="JS/social-icons.js"></script>
+    <script src="JS/lightmode.js"></script>
+  </body>
+</html>
